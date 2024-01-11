@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap');
+
+    :root{
+      --color1: hsl(0, 100%, 67%);
+      --color2:hsl(39, 100%, 56%);
+      --color3: hsl(166, 100%, 37%);
+      --color4: hsl(234, 85%, 45%);
+      --color5: hsl(252, 100%, 67%);
+      --color6:hsl(241, 81%, 54%);
+      --circle: hsla(256, 72%, 46%, 1);
+      --circle2: hsla(241, 72%, 46%, 0);
+      --font: Hanken Grotesk;
+    }
+    *{
+
+    }
+    body{
+      
+      font-family: 'Hanken Grotesk', sans-serif;
+      font-size: 18px;
+      min-height: 100vh; /*  DEIXA ALINHADO NO CENTRO VERTICAL */
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    main{
+      border-radius: 30px;
+      box-shadow: 0px 0px 19px 23px rgba(0,0,0,0.1);
+      
+      margin: auto;
+      display: flex;
+      width: 700px;
+      height: 450px;
+    }
+    .result{
+      width: 350px;
+      background-image: linear-gradient(to top, var(--color4), var(--color5));
+      border-radius: 25px;
+      text-align: center;
+    }
+
+    .result > h2{
+      font-weight: normal;
+      font-size: 22px;
+      color:hsl(241, 100%, 89%);
+    }
+
+    .result2{
+      padding: 0px 8%;
+    }
+
+    .result2 > p{
+      color:hsl(241, 100%, 89%);
+    }
+
+    .result2 > h1{
+      font-size: 35px;
+      padding: 0px;
+      color: white;
+    }
+   
+    .circle{
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto ;
+      background-image: linear-gradient(to bottom, var(--circle), var(--circle2));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle > p{
+      display: flex;
+      margin: 0px;
+      padding: 1.5px;
+      color:hsl(241, 100%, 89%);
+    }
+
+    .circle > p > span{
+      font-weight: bolder;
+      font-size: 50px;
+      color: white;
+    }
+
+    .summary{
+      height: 100%; /**/
+      width: 300px;
+      padding: 0px 40px;
+      border-radius: 40px 10px 10px 0px;
+      
+    }
+
+    h1{
+      font-size: 20px;
+      padding: 20px 0px;
+      display: block;
+      align-items: start;
+      justify-content: start;
+      color: black;
+    }
+
+    .reac, .mem, .ver, .vis{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .img{
+      display: flex;
+    }
+
+    .img > p{
+      padding-left: 20px;
+    }
+
+    .reac{
+      font-size: 15px;
+      background-color: hsl(0, 100%, 67%, 0.120);
+      border-radius: 10px;
+      margin: 6px 0px;
+      padding: 0px 20px;
+    }
+    .reac > .img{
+      color: var(--color1);
+    }
+
+    .mem{
+      font-size: 15px;
+      background-color: hsl(39, 100%, 56%, 0.120);
+      border-radius: 10px;
+      margin: 6px 0px;
+      padding: 0px 20px;
+    }
+    .mem > .img{
+      color: var(--color2);
+    }
+
+    .ver{
+      font-size: 15px;
+      background-color: hsl(166, 100%, 37%, 0.120);
+      border-radius: 10px;
+      margin: 6px 0px;
+      padding: 0px 20px;
+    }
+    .ver > .img{
+      color: var(--color3);
+    }
+
+    .vis{
+      font-size: 15px;
+      background-color: hsl(234, 85%, 45%, 0.120);
+      border-radius: 10px;
+      margin: 6px 0px;
+      padding: 0px 20px;
+    }
+    .vis > .img{
+      color: var(--color4);
+    }
+    .porcent > p{
+      color:hsl(224, 30%, 27%);
+    }
+    .porcent > p > span{
+      color: black;
+      font-weight: bolder;
+    }
+
+    .buttom{
+      display: flex;
+      justify-content: center;
+      background-image: linear-gradient(to top, var(--color4), var(--color5));
+      border-radius: 30px;
+      font-size: 19px;
+      margin-top: 45px;
+      padding: 10px 0px;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="result">
+      <h2>Your Result </h2>
+      <div class="circle">
+        <p><span>76</span></p>
+        <p>of 100</p>
+      </div>
+      <div class="result2">
+        <h1>Great</h1>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+
+    <div class="summary">
+      <h1>Summary</h1>
+
+      <div class="reac">
+        <div class="img">
+          <img src="assets/images/icon-reaction.svg" alt="">
+          <p>Reaction</p>
+        </div>
+        <div class="porcent">
+          <p><span>80</span> / 100</p>
+        </div>
+      </div>
+
+      <div class="mem">
+        <div class="img">
+          <img src="assets/images/icon-memory.svg" alt="">
+          <p>Memory</p>
+        </div>
+        <div class="porcent">
+          <p><span>92</span> / 100</p>
+        </div>
+      </div>
+
+      <div class="ver">
+        <div class="img">
+          <img src="assets/images/icon-verbal.svg" alt="">
+          <p>Verbal</p>
+        </div>
+        <div class="porcent">
+          <p><span>61</span> / 100</p>
+        </div>
+      </div>
+
+      <div class="vis">
+        <div class="img">
+          <img src="assets/images/icon-visual.svg" alt="">
+          <p>Visual</p>
+        </div>
+        <div class="porcent">
+          <p><span>72</span> / 100</p>
+        </div>  
+      </div>
+
+      <h1 class="buttom">Continue</h1>
+      
+    </div>
+      
+
+
+  </main>
+  
+  
+  
+
+  
+  
+</body>
+</html>
