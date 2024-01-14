@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600&family=Hanken+Grotesk:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@800&family=Hanken+Grotesk:wght@800&display=swap');
+
+:root{
+    --color0: hsl(47, 88%, 63%);
+    --color1: hsl(0, 0%, 50%);
+    
+    --font: font-family: 'Figtree', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0pxc;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--color0);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+ /*  CONTEUDO  */
+main{
+    margin: auto;
+    background-color: white;
+    width: 325px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px 0px black;
+}
+
+main > .ilustrative{
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+main > h1{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+main > h2{
+    margin: 15px 0px;
+    background-color: var(--color0);
+    width: 90px;
+    padding: 4px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+main > h1:hover{
+    color: var(--color0);
+}
+
+main > p{
+    margin: 15px 0px;
+}
+
+.description{
+    color: var(--color1);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+}
+
+footer > img{
+    width: 11%;
+}
+
+footer > p{
+    margin: 0px 10px;
+}
+
+@media screen and (max-width: 370px){
+    main{
+        max-width: 300px;
+    }
+}
