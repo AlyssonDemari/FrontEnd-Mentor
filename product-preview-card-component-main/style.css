@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+:root{
+
+    --color0: hsl(158, 36%, 37%);
+    --color1: hsl(30, 38%, 92%) ;
+    --color2: hsl(212, 21%, 14%);
+    --color3: hsl(228, 12%, 48%);
+
+    --font0: 'Montserrat', sans-serif;
+    --font1: 'Fraunces', serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--color1);
+    font-family: var(--font1);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+main{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px 23px rgba(0,0,0,0.1);
+}
+
+.perfume{
+    border-radius: 20px 0px 0px 20px ;
+}
+
+main > div > img{
+    width: 300px;
+    height: 100%;
+}
+
+.conteudo{
+    padding: 30px;
+    max-width: 320px;
+}
+
+.conteudo h3{
+    font-family: var(--font0);
+    color: var(--color3);
+    margin: 8px 0px;
+}
+
+.conteudo h1{
+    margin: 15px 0px;
+}
+
+.conteudo > p{
+    font-family: var(--font0);
+    color: var(--color3);
+    line-height: 25px;
+    max-width: 260px;
+}
+
+.preco{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    font-size: 32px;
+    color: var(--color0);
+    text-align: center;
+    align-items: center;
+}
+
+span{
+    font-size: 16px;
+    color: var(--color3);
+    padding-left: 15px;
+    font-weight: medium;
+    font-family: var(--font0);
+}
+.card{
+    background-color: var(--color0);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+}
+
+div > .card-img{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.card:hover{
+    background-color: hsl(159, 35%, 16%);
+    cursor: pointer;
+}
+
+@media  screen and (max-width: 1020px){
+    main{
+        width: 340px;
+        height: 790px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    main > div > img{
+        width: 340px;
+        height: 350px;
+    }
+
+    .perfume{
+        border-radius: 20px 20px 0px 00px;
+    }
+}
