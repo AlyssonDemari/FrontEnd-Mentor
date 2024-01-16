@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --soft-blue:hsl(215, 51%, 70%); 
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+
+    --font: 'Outfit', sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: var(--font);
+    background-color: var(--main-BG);
+    font-size: 18px;
+}
+
+main{
+    background-color: var(--card-BG);
+    width: 300px;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+main > img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+main > img:hover{
+    
+}
+
+main > h1{
+    color: white;
+    font-size: 22px;
+}
+
+article{
+    color: var(--line);
+}
+article > p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.days{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: var(--soft-blue);
+    }
+
+.days > p > img{
+    margin-right: 10px;
+}
+
+span{
+    color: var(--Cyan);
+    font-weight: bold;
+}
+
+hr.blue {
+    background-color: var(--line);
+    height: 2px;
+    border: none;
+}
+
+footer > div{
+    display: flex;
+    align-items: center;
+}
+
+footer > div > p{
+    padding: 0px 15px;
+    color: var(--line);
+}
+
+footer > div > img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+footer > div > p > strong{
+    color: white;
+    font-weight: normal;
+}
+
