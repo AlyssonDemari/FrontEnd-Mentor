@@ -109,7 +109,7 @@ main > h1{
 
 
 article{
-    color: var(--line);
+    color: var(--soft-blue);
 }
 article > p{
     padding: 0px;
@@ -155,7 +155,7 @@ footer > div{
 
 footer > div > p{
     padding: 0px 15px;
-    color: var(--line);
+    color: var(--soft-blue);
 }
 
 footer > div > img{
