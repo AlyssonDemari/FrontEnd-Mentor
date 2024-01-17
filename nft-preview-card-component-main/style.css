@@ -37,6 +37,36 @@ main > img{
     border-radius: 10px;
 }
 
+.image-container {
+    position: relative;
+    width: 300px; /* Ajuste conforme necessário */
+    height: 300px; /* Ajuste conforme necessário */
+    overflow: hidden;
+  }
+
+  .base-image,
+  .overlay-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .overlay-image {
+    opacity: 0;
+    width: 50px; /* Largura desejada */
+    height: auto; /* Altura automática para manter a proporção da imagem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Cyan);
+  }
+
+  .image-container:hover .overlay-image {
+    opacity: 1;
+  }
 
 main > h1{
     color: white;
