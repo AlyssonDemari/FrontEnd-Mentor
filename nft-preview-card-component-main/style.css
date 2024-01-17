@@ -165,11 +165,12 @@ footer > div > img{
     border-radius: 50%;
 }
 
-footer > div > p > strong{
+footer > div > p > a{
     color: white;
     font-weight: normal;
+    text-decoration: none;
 }
 
-footer > div > p > strong:hover{
+footer > div > p > a:hover{
     color: var(--Cyan);
 }
