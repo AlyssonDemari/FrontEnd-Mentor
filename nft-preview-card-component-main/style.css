@@ -21,6 +21,10 @@ body{
     font-size: 18px;
 }
 
+h1:hover{
+    color: var(--Cyan);
+}
+
 main{
     background-color: var(--card-BG);
     width: 300px;
@@ -33,9 +37,6 @@ main > img{
     border-radius: 10px;
 }
 
-main > img:hover{
-    
-}
 
 main > h1{
     color: white;
@@ -48,6 +49,16 @@ article{
 article > p{
     padding: 0px;
     margin: 0px;
+}
+
+.clock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.clock img{
+    height: 15px;
+    padding: 0px 10px;
 }
 
 .days{
@@ -92,5 +103,9 @@ footer > div > img{
 footer > div > p > strong{
     color: white;
     font-weight: normal;
+}
+
+footer > div > p > strong:hover{
+    color: var(--Cyan);
 }
 
