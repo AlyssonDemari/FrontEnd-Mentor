@@ -56,12 +56,11 @@ main > img{
 
   .overlay-image {
     opacity: 0;
-    width: 50px; /* Largura desejada */
-    height: auto; /* Altura automática para manter a proporção da imagem */
+    width: 50px;
+    height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--Cyan);
   }
 
   .image-container:hover .overlay-image {
