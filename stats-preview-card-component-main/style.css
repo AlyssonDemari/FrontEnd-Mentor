@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root{
+    --Very-dark-blue:hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+    --font0: 'Inter', sans-serif;
+    --font1: 'Lexend Deca', sans-serif;
+}
+
+body{
+    font-family: var(--font0);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+main{
+    background-color: var(--Dark-desaturated-blue);
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+main > div > img{
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+
+article{
+    width: 450px;
+    margin: auto;
+    
+}
+
+article > h1{
+    font-size: 30px;
+}
+
+article > p{
+    margin-top: 30px;
+    color: var(--Slightly-transparent-white);
+    width: 350px;
+    line-height: 1.9;
+}
+
+span{
+    color: var(--Soft-violet);
+}
+
+
+aside{
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    margin-top: 35px;
+}
+
+.plus{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px;
+    line-height: 2;
+
+}
+
+.companies{
+    font-family: var(--font1);
+    font-size: 13px;
+    color: var(--Slightly-transparent-white);
+    font-weight: 400;
+    margin: 0px;
+}
+
+@media  screen and (max-width: 1130px){
+
+    main{
+        background-color: var(--Dark-desaturated-blue);
+        display: flex;
+        flex-direction: column-reverse;
+        width: 340px;
+        height: 125vh;
+        border-radius: 10px;
+        margin: 50px;
+    }
+
+    main > div > img{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    article{
+        width: 340px;
+        margin: auto;
+    }
+
+    article > h1{
+        display: block;
+        width: 300px;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    article > p{
+        margin-top: 30px;
+        color: var(--Slightly-transparent-white);
+        width: 260px;
+        margin: auto;
+        text-align: center;
+        line-height: 1.9;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 100px;
+        margin-top: 35px;
+    }
+
+    .num{
+        margin: 10px 0px;
+    }
+
+    .num > p{
+        width: 100px;
+        text-align: center;
+    }
+
+}
