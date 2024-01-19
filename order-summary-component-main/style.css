@@ -4,6 +4,7 @@
 :root{
     --Pale-blue: hsl(225, 100%, 94%);
     --Bright-blue: hsl(245, 75%, 52%);
+    --light: hsl(245, 94%, 68%);
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
@@ -23,34 +24,87 @@ body{
 }
 
 main{
-    background-color: aqua;
+    background-color: white;
     width: 400px;
     text-align: center;
+    border-radius: 15px;
 }
 
 main > img{
     width: 100%;
+    border-radius: 15px 15px 0px 0px;
 }
 
 main > p{
     display: block;
     margin: auto;
     width: 300px;
+    color: var(--Desaturated-blue);
 }
 
 article{
     display: flex;
-    background-color: blueviolet;
-    width: 300px;
-    margin: auto;
+    background-color: var(--Very-pale-blue);
+    width: 340px;
+    margin: 20px auto;
     text-align: center;
+    border-radius: 10px;
 }
 
-article > img{
-    width: 15%;
-    height: 15%;
+article > .music{
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
-article > .plan{
-
+.music > a{
+    margin-left: 70px;
+    color: var(--Bright-blue);
+    font-weight: bolder;
 }
+
+.plan > h2{
+    margin: 0px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.plan > p{
+    margin: 0px;
+    font-size: 17px;
+    padding: 0px 18px;
+    color: var(--Desaturated-blue);
+}
+
+.buttom{
+    background-color: var(--Bright-blue);
+    width: 340px;
+    height: 40px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0px 18px 15px var(--Pale-blue)
+  }
+
+  footer > p{
+    margin: 30px;
+    color: var(--Desaturated-blue);
+    font-weight: bolder;
+  }
+
+  .buttom:hover{
+    background-color: var(--light);
+  }
+
+  footer > p:hover{
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: var(--light);
+    text-decoration: none;
+  }
