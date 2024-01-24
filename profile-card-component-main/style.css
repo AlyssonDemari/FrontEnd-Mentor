@@ -3,7 +3,7 @@
 :root{
 
     --Dark-cyan: hsl(185, 75%, 39%);
-    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Very-dark-desaturated-blue: hsla(229, 23%, 23%, 0.144);
     --Dark-grayish-blue: hsl(227, 10%, 46%);
     --Dark-gray: hsl(0, 0%, 59%);
 
@@ -67,11 +67,11 @@ h2{
 
 span{
     color: var(--Dark-gray);
-    font-weight: 400;
+    font-weight: 700;
 }
 
 hr.hr {
-    background-color:var(--Dark-gray);
+    background-color:var(--Very-dark-desaturated-blue);
     height: 2px;
     border: none;
 }
@@ -79,7 +79,7 @@ hr.hr {
 aside{
     display: flex;
     justify-content: space-around;
-    margin: 30px;
+    margin: 20px 0px 10px 0px ;
 }
 
 .number{
@@ -90,7 +90,8 @@ aside{
 .down{
     color: var(--Dark-gray);
     font-size: 12px;
-    padding: 8px;
+    padding: 4px;
+    font-weight: 400;
 }
 
 @media  screen and (max-width: 1130px){
@@ -101,6 +102,7 @@ aside{
     .perfil{
         width: 110px;
         left: 35%;
+        top: 89px;
     }
 }
 
