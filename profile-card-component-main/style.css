@@ -10,7 +10,15 @@
     --font:'Kumbh Sans', sans-serif;
 }
 
-body{
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font);
+    
+}
+
+body{  /* feito com ajuda */
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -19,13 +27,18 @@ body{
     background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg) ;
     background-repeat: no-repeat, no-repeat;
     background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    font-size: 12px;
 }
 
 main{
     background-color: white;
+    display: flex;
     text-align: center;
+    flex-direction: column;
     width: 400px;
     border-radius: 20px;
+    position: relative; /* feito com ajuda  */
+    font-size: 18px;
 }
 
 .top > img{
@@ -33,12 +46,62 @@ main{
     border-radius: 20px 20px 0px 0px;
 }
 
-.perfil > img{
+.perfil{
+    width: 110px;
     border-radius: 50%;
     border: 4px solid white;
     position: absolute;
-    top: 345px;
-    left: 880px;
+    top: 105px;
+    left: 37%;
+}
+
+h1{
+    margin: 70px 0px 5px 0px;
+    font-size: 18px;
+}
+
+h2{
+    margin: 8px 0px 30px 0px;
+    font-size: 14px;
+}
+
+span{
+    color: var(--Dark-gray);
+    font-weight: 400;
+}
+
+hr.hr {
+    background-color:var(--Dark-gray);
+    height: 2px;
+    border: none;
+}
+
+aside{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.number{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.down{
+    color: var(--Dark-gray);
+    font-size: 12px;
+    padding: 8px;
+}
+
+@media  screen and (max-width: 1130px){
+    main{
+     width: 350px;
+    }
+
+    .perfil{
+        width: 110px;
+        left: 35%;
+    }
 }
 
 
