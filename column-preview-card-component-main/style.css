@@ -35,26 +35,13 @@ main{
     
 }
 
-h2{
+a{
     background-color: white;
-    width: 150px;
     text-align: center;
-    padding: 13px;
+    padding: 13px 40px;
     border-radius: 30px;
     font-size: 16px;
-}
-
-.sedans >.conteudo > a{
     text-decoration: none;
-    color: var(--Bright-orange);
-}
-.suvs >.conteudo > a{
-    text-decoration: none;
-    color: var(--Dark-cyan);
-}
-.luxury >.conteudo > a{
-    text-decoration: none;
-    color: var(--Very-dark-cyan);
 }
 
 .conteudo{
@@ -80,38 +67,28 @@ h2{
     border-radius: 8px 0px 0px 8px;
 }
 
-.sedans > div > h2 > a{
+.sedans > div > a{
     color: var(--Bright-orange);
 }
 
-.sedans > div > a> h2:hover{
+.sedans > div > a:hover{
+    color: white;
     background-color: transparent;
     border: 1px solid white;
-    color: white;
-    font-weight: 400;
-}
-
-.sedans > div > p{
-    color: var(--Transparent-white);
 }
 
 .suvs{
     background-color: var(--Dark-cyan);
 }
 
-.suvs > div > h2 > a{
+.suvs > div > a{
     color: var(--Dark-cyan);
 }
 
-.suvs > div > a> h2:hover{
+.suvs > div > a:hover{
+    color: white;
     background-color: transparent;
     border: 1px solid white;
-    color: white;
-    font-weight: 400;
-}
-
-.suvs > div > p{
-    color: var(--Transparent-white);
 }
 
 .luxury{
@@ -119,20 +96,15 @@ h2{
     border-radius: 0px 8px 8px 0px;
 }
 
-.luxury > div > h2 > a{
+.luxury > div > a{
     color: var(--Very-dark-cyan);
-    margin: 15px 0px;
 }
-.luxury > div > a> h2:hover{
+.luxury > div > a:hover{
+    color: white;
     background-color: transparent;
     border: 1px solid white;
-    color: white;
-    font-weight: 400;
 }
 
-.luxury > div > p{
-    color: var(--Transparent-white);
-}
 
 @media  screen and (max-width: 1000px){
 
