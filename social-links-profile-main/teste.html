@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Botão Animado</title>
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.fill-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(to right, #2980b9 50%, #3498db 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.fill-button:hover {
+  background-position: left bottom;
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="fill-button" href="#">GitHub</a>
+    <!-- Adicione mais links com a mesma estrutura -->
+  </nav>
+  <script src="script.js"></script>
+</body>
+</html>

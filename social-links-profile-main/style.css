@@ -1,0 +1,91 @@
+@font-face {
+    font-family: inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: #333333;
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+
+    --font0: inter, sans-serif ;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: var(--Off-Black);
+    font-family: var(--font0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+main{
+    background-color: var(--Dark-Grey);
+    color: var(--White);
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+}
+
+main > h2{
+    margin: 10px 0px;
+    color: var(--Green);
+    font-weight: 600;
+}
+
+p{
+    font-size: 16px;
+    margin: 25px 0px;
+}
+
+img{
+    border-radius: 50%;
+    width: 30%;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+   
+    
+    
+    
+
+
+}
+
+.button {  /*  Animação feita com ajuda  */
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    font-size: 16px;    
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(to right, var(--Green) 50%, var(--Grey) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-position: left bottom;
+    color: var(--Off-Black);
+  }
