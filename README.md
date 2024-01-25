@@ -9,4 +9,5 @@
 6- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/order-summary-component-main/index.html" target="_blank">Order-Summary</a> <br>
 7- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/stats-preview-card-component-main" target="_blank">Stats-Preview</a> <br>
 8- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/profile-card-component-main/index.html" target="_blank">Profile-Card</a> <br>
+9- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/column-preview-card-component-main/" target="_blank">3-columns</a> <br>
 
