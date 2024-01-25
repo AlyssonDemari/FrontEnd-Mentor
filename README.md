@@ -5,8 +5,9 @@
 2- <a href=https://alyssondemari.github.io/FrontEnd-Mentor/results-summary-component-main/index.html target="_blank">Result-Summary</a>  <br>
 3- <a href=https://alyssondemari.github.io/FrontEnd-Mentor/blog-preview-card-main/index.html target="_blank">Blog-Preview</a> <br>
 4- <a href=https://alyssondemari.github.io/FrontEnd-Mentor/product-preview-card-component-main/index.html target="_blank">Product-preview</a> <br>
-5- <a href="https://alyssondemari.github.io/nft-preview-card-component-main/index.html" target="_blank">Preview Card</a> <br>
+5- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/nft-preview-card-component-main/index.html" target="_blank">nft-Preview</a> <br>
 6- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/order-summary-component-main/index.html" target="_blank">Order-Summary</a> <br>
 7- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/stats-preview-card-component-main" target="_blank">Stats-Preview</a> <br>
 8- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/profile-card-component-main/index.html" target="_blank">Profile-Card</a> <br>
+9- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/column-preview-card-component-main/" target="_blank">3-columns</a> <br>
 
