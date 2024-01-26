@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    --font0: 'Karla', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--Light-Gray);
+    font-family: var(--font0);
+    font-size: 16px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 1fr 1fr;
+}
+
+header{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 10px 10px 0px 0px;
+    padding: 40px;
+}
+
+header > h1{
+    color: var(--Cyan);
+    margin: 15px 0px;
+}
+
+header > h2{
+    color: var(--Bright-Yellow);
+}
+
+header > p{
+    color: var(--Grayish-Blue);
+    margin: 15px 0px;
+    width: 580px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+article{
+    background-color: var(--Cyan);
+    padding: 20px 40px;
+    color: white;
+    border-radius: 0px 0px 0px 10px ;
+}
+
+article > h2{
+    margin: 15px 0px;
+    
+}
+
+article > h3{
+    color: var(--Light-Gray);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+span{
+    margin-right: 15px;
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+article > p{
+    margin: 25px 0px;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    width: 240px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.button{
+    background-color: var(--Bright-Yellow);
+    
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+aside{
+    background-color: #49BEBD;
+    color: white;
+    padding: 20px 40px;
+    line-height: 1.5;
+    border-radius: 0px 0px 10px 0px;
+}
+
+aside > h2{
+    margin: 15px 0px ;
+}
+
+aside > p{
+    width: 240px;
+    color: var(--Light-Gray);
+    margin: 20px 0px;
+}
+
+@media  screen and (max-width: 750px){
+    
+    main{
+        margin-bottom: 500px;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header > p{
+        color: var(--Grayish-Blue);
+        margin: 15px 0px;
+        width: 250px;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+
+    article{
+        border-radius: 0px 0px 0px 0px ;
+    }
+
+    aside{
+        border-radius: 0px 0px 10px 10px;
+    }
+}
