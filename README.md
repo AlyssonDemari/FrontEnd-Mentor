@@ -1,7 +1,7 @@
 # Projects
 
 <!-- 0- <a href="" target="_blank"></a> -->
-1- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/1-qr-code-component-main/index.html" target="_blank">QR-code</a> <br>
+1- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/qr-code-component-main/index.html" target="_blank">QR-code</a> <br>
 2- <a href=https://alyssondemari.github.io/FrontEnd-Mentor/results-summary-component-main/index.html target="_blank">Result-Summary</a>  <br>
 3- <a href=https://alyssondemari.github.io/FrontEnd-Mentor/blog-preview-card-main/index.html target="_blank">Blog-Preview</a> <br>
 4- <a href=https://alyssondemari.github.io/FrontEnd-Mentor/product-preview-card-component-main/index.html target="_blank">Product-preview</a> <br>
@@ -11,6 +11,6 @@
 8- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/profile-card-component-main/index.html" target="_blank">Profile-Card</a> <br>
 9- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/column-preview-card-component-main/" target="_blank">3-columns</a> <br>
 10- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/social-links-profile-main//index.html" target="_blank">Social-Links</a> <br> 
-11- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/11-single-price-grid-component-master/index.html" target="_blank">Single-Grid</a> <br>
+11- <a href="https://alyssondemari.github.io/FrontEnd-Mentor/single-price-grid-component-master/index.html" target="_blank">Single-Grid</a> <br>
 
 
