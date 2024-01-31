@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+    --font0: 'Poppins', sans-serif;
+    --font1: 'Open Sans', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding: 60px 60px 0px 60px;
+    height: 90vh;
+    background: var(--Violet) url('images/bg-desktop.svg') left center no-repeat scroll;
+    background-size: cover;
+    font-family: var(--font1);
+    color: white;
+}
+
+main{
+    display: flex;
+}
+
+.image{
+    padding: 70px 0px;
+}
+
+article{
+    margin: 70px;
+    width: 460px;
+}
+
+article > h1{
+    margin: 20px 0px;
+    font-size: 40px;
+}
+
+article > p{
+    margin: 20px 0px;
+}
+
+.button{
+    background-color: white;
+    font-size: 14px;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: var(--Violet);
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.fa{
+    margin: 0px 10px;
+    width: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.fa:hover{
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+}
+
+@media  screen and (max-width: 1020px){
+
+    body{
+        padding: 20px;
+        height: 90vh;
+        width: 90vw;
+        background: var(--Violet) url('images/bg-mobile.svg') left center no-repeat scroll;
+        background-size: cover;
+    }
+
+    header > img{
+        margin-bottom: 50px;
+        width: 150px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .image{
+        padding: 0px;
+    }
+
+    main > div > img{
+        margin: auto;
+        width: 320px;
+    }
+
+    article{
+        margin: 0px;
+        width: 300px;
+        text-align: center;
+    }
+
+    article > h1{
+        margin: 20px 0px;
+        font-size: 25px;
+    }
+
+
+    .button{
+        margin: auto;
+        align-items: center;
+    }
+
+    footer{
+        margin: 40px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
