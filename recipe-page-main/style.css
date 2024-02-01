@@ -139,14 +139,15 @@ table{
 }
 
 td{
-    padding-left: 0px;
+    padding-left: 30px;
     line-height: 2.5;
     width: 400px;
     border-bottom: 1px solid var(--Light-Grey);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 span{
+    font-weight: 600;
     color: var(--Nutmeg);
 }
 
