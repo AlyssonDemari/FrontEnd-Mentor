@@ -92,6 +92,7 @@ header > p{
 /*geral*/
 .ingredients > h2,
 .instructions > h2{
+    font-weight: 400;
     font-family: var(--font0);
     color: var(--Nutmeg);
 }
@@ -127,6 +128,7 @@ header > p{
     font-family: var(--font0);
     color: var(--Nutmeg);
     margin: 20px 0px;
+    font-weight: 400;
 }
 
 caption{
