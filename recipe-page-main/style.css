@@ -22,20 +22,134 @@
 }
 
 picture > img{
-    width: 540px;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 13px;
 }
 
 body{
     font-family: var(--font1);
     background-color: var(--Eggshell);
-    width: 600px;
+    width: 750px;
     margin: auto;
+    font-size: 16px;
 }
 
 main{
     background-color: var(--White);
-    padding: 30px;
-    margin: 50px 0px;
-    border-radius: 15px;
+    padding: 40px;
+    margin: 100px 0px;
+    border-radius: 20px;
+}
+
+header > h1{
+    color: var(--Dark-Charcoal);
+    font-family: var(--font0);
+    font-weight: lighter;
+    font-size: 40.5px;
+    margin: 20px 0px;
+}
+
+header > p{
+    color: var(--Wenge-Brown);
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+.preparation{
+    background-color: var(--Rose-White);
+    color: var(--Wenge-Brown);
+    padding: 20px 35px;
+    border-radius: 10px;
+    line-height: 2.3;
+}
+
+.preparation > h2{
+    color: var(--Dark-Raspberry);
+}
+
+.preparation > ul {
+    margin-left: 20px;
+}
+
+.preparation > li {
+    margin-right: 80px;
+    margin-bottom: 15px;
+}
+
+/*geral*/
+.preparation  p,
+.ingredients p,
+.instructions p{
+    padding-left: 20px;
+}
+
+.ingredients{
+    color: var(--Wenge-Brown);
+    margin: 20px 0px; 
+    line-height: 2;
+}
+
+/*geral*/
+.ingredients > h2,
+.instructions > h2{
+    font-family: var(--font0);
+    color: var(--Nutmeg);
+}
+
+.ingredients > ul {
+    margin-left: 20px;
+}
+
+.instructions{
+    color: var(--Wenge-Brown);
+    margin: 20px 0px; 
+}
+
+.instructions ol{
+    padding: 15px 0px;
+    color: var(--Wenge-Brown);
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.instructions li::marker{
+    font-weight: 700;
+    color: var(--Nutmeg);
+}
+
+.nutrition{
+    margin: 20px 0px 0px 0px;
+    color: var(--Wenge-Brown);
+}
+
+.nutrition h2{
+    font-family: var(--font0);
+    color: var(--Nutmeg);
+    margin: 20px 0px;
+}
+
+caption{
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td{
+    padding-left: 0px;
+    line-height: 2.5;
+    width: 400px;
+    border-bottom: 1px solid var(--Light-Grey);
+    font-weight: 600;
+}
+
+span{
+    color: var(--Nutmeg);
+}
+
+.last{
+    border: none;
 }
