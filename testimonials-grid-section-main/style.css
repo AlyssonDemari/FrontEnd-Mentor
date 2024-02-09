@@ -27,69 +27,40 @@ body{
 
 main{
     margin: auto;
-    width: 1002px;
+    width: 1112px;
     display: grid;
-    grid-template-columns: 243px 243px 231px 230px;
-    grid-template-rows: 3;
+    grid-template-columns: 278px 278px 278px 278px;
+    grid-template-rows: 282px 269px;
 }
 
 div{
-    padding: 30px;
+    margin: 33px;
 }
-
-header{
-    height: 40px;
-    display: flex; 
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-header > img{
-    height: 100%;
-    border-radius: 50%;
-    border: 2px solid white;
-}
-
-p{
-    color: var(--Light-gray);
-}
-
-.name{
-    padding: 10px;
-}
-
 
 .daniel{
     background-color: var(--Moderate-violet);
     grid-column-start: 1;
     grid-column-end: 3;
-    color: var(--White);
-    margin: 10px;
-    border-radius: 8px;
+
 }
 
 .jonatan{
     background-color: var(--Very-dark-grayish-blue);
     grid-column-start: 3;
     grid-column-end: 4;
-    margin: 10px;
-    border-radius: 8px;
 }
 
 .jeanette{
     background-color: var(--White);
     grid-column-start: 1;
     grid-column-end: 2;
-    margin: 10px;
-    border-radius: 8px;
+
 }
 
 .patrick{
     background-color: var(--Very-dark-blackish-blue);
     grid-column-start: 2;
     grid-column-end: 4;
-    margin: 10px;
-    border-radius: 8px;
 }
 
 .kira{
@@ -98,7 +69,5 @@ p{
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
-    margin: 10px;
-    border-radius: 8px;
 
 }
