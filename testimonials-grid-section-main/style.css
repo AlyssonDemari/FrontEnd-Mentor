@@ -23,28 +23,40 @@ body{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    width: 1200px;
-    font-size: 13px;
+    width: 1115px;
+    font-size: 14px;
     color: var(--White);
 }
 main{
     display: grid;
-    grid-template-columns: 5;
-    grid-template-rows: 3;
-    grid-gap: 20px;
+    grid-template-columns: 256px 256px 256px 256px;
+    grid-template-rows: 269px 269px;
+    grid-gap: 24px 30px;
 }
 
 header{
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 header img{
     height: 30px;
     border-radius: 50%;
-    border: 2px solid white;
     margin-right: 20px;
+}
+
+.bord{
+    border: 2px solid rgba(255, 255, 255, 0.40);
+}
+
+.bord2{
+    border: 2px solid var(--Moderate-violet);
+}
+
+h1{
+    font-size: 20px;
+    padding: 0px;
 }
 
 .text{
@@ -54,18 +66,36 @@ header img{
 
 .text h3{
     color: var(--Light-gray);
+    padding-bottom: 20;
 }
 
 .daniel{
     background-color: var(--Moderate-violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: 358px;
     grid-column: 1/3;
     padding: 20px;
+    border-radius: 8px;
+}
+
+.daniel p{
+    color: var(--Light-gray);
+    margin: 16px 0px;
 }
 
 .jonathan{
     background-color: var(--Very-dark-grayish-blue);
     grid-column: 3/4;
     padding: 20px;
+    border-radius: 8px;
+}
+
+.jonathan p{
+    color: var(--Light-gray);
+    margin: 16px 0px;
+    width: 205px;
 }
 
 .jeanette{
@@ -74,13 +104,33 @@ header img{
     padding: 20px;
     color: var(--Very-dark-grayish-blue,);
     font-weight: 600;
+    border-radius: 8px;
 }
+
+.jeanette h1{
+    width: 179px;
+}
+
+.jeanette p{
+    color: var(--Light-gray);
+    width: 200px;
+    margin: 16px 0px;
+}
+
 
 .patrick{
     background-color: var(--Very-dark-blackish-blue);
     grid-column: 2/4;
     padding: 20px;
+    border-radius: 8px;
 }
+
+.patrick p{
+    color: var(--Light-gray);
+    width: 515px;
+    margin: 16px 0px;
+}
+
 
 .kira{
     background-color: var(--White);
@@ -89,5 +139,14 @@ header img{
     padding: 20px;
     color: var(--Very-dark-grayish-blue,);
     font-weight: 600;
+    border-radius: 8px;
+}
+
+
+.kira p{
+    color: var(--Light-gray);
+    width: 212px;
+    margin: 16px 0px;
+    font-weight: lighter;
 }
 
