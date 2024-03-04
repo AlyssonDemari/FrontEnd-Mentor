@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+    --font:"Bai Jamjuree", sans-serif;
+    
+}
+
+body{
+    font-family:var(--font);
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: white url(images/bg-header-desktop.png) top no-repeat fixed;
+    background-size: 100% 510px;
+}
+
+header{
+    margin: 128px;
+    width: 700px;
+    height: 721px;
+    margin: 128px auto;
+}
+
+header > img{
+    width: 125px;
+    margin-bottom: 40px;
+}
+
+header > h1{
+    color: var(--Dark-Grayish-Blue);
+    width: 700px;
+    margin-bottom: 16px;
+    font-size: 43px;
+    font-weight: 400;
+}
+
+header > p{
+    width: 700px;
+    font-size: 20px;
+    letter-spacing: 0.432px;
+    color: var(--Grayish-Blue);
+}
+
+.head-bottom{
+    margin: 50px 110px 150px 110px;
+
+}
+
+header > div > bottom{
+    width: 227px;
+    color: white;
+    background-color: var(--Strong-Cyan);
+    padding: 15px 36px;
+    margin-right: 15px;
+    border-radius: 50px;
+    border-bottom: 3px solid #219C89;
+}
+
+header > div > bottom:last-of-type{
+    width: 227px;
+    color: white;
+    background-color: var(--Light-Blue);
+    padding: 15px 36px;
+    border-radius: 50px;
+    border-bottom: 3px solid var(--Dark-Grayish-Blue);
+}
+
+bottom:hover{
+    background-color:hsl(171, 42%, 20%);
+    border-bottom: 3px solid #022e29;
+}
+
+bottom:last-of-type:hover{
+    background-color: hsl(233, 82%, 19%);
+    border-bottom: 3px solid  hsl(214, 100%, 3%);;
+}
+
+.tela h2{
+    font-size: 35.5px;
+    margin: 0px auto;
+    width: 456px;
+    font-weight: 400;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.tela p{
+    text-align: center;
+    margin: 20px auto;
+    width: 630px;
+    color: var(--Grayish-Blue);
+}
