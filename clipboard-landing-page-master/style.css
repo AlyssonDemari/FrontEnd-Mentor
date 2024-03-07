@@ -285,10 +285,18 @@ footer{
     text-decoration: none;
 }
 
+.item-foot:hover{
+    color: var(--Strong-Cyan);
+}
+
 .icon-foot{
     display: flex;
     gap: 23px;
     margin-right: 380px;
+}
+
+.icon-foot:hover{
+    color: var(--Strong-Cyan);
 }
 
 /*  MEDIA QUERY  */
@@ -569,6 +577,10 @@ footer{
         width: 185px;
         color: var(--Grayish-Blue); 
         text-decoration: none;
+    }
+
+    .item-foot:hover{
+        color: #022e29;
     }
 
     .icon-foot{
