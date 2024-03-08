@@ -28,60 +28,57 @@ body{
 
   main{
     display: flex;
-    width: 890px;
-    gap: 30px;
-  }
-
-  .sub-main{
-    display: flex;
+    gap: 40px;
+    background-color: aqua;
     align-items: end;
-    gap: 30px;
-    width: 890px;
-    background-color: aquamarine;
   }
 
-  .fylo{
+  section{
     background-color: var(--Dark-Blue);
-    width: 350px;
-    height: 199px;
-    border-radius: 10px 90px 10px 10px;
-  }
-
-  .logo{
+    width: 210px;
+    height: 100px;
     padding: 30px;
+    border-radius: 10px 100px 10px 10px;
   }
 
   .sub{
-    padding: 0px 30px;
-
-  }
-  .sub img{
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--Pale-Blue);
-    border-radius: 10px;
-    padding: 15px;
-    margin-right: 10px;
-  }
-
-  .barra{
     display: flex;
-    width: 540px;
-    height: 150px;
-    background-color: var(--Dark-Blue);
+    gap: 15px;
+  }
+
+  .logo{
+    width: 50%;
+  }
+
+  .sub img{
+    margin: 20px 0px;
+    background-color: var(--Very-Dark-Blue);
+    padding: 10px;
+    height: 17px;
+    width: 17px;
     border-radius: 10px;
   }
 
+  article{
+    border-radius: 10px;
+    background-color: var(--Dark-Blue);
+    padding: 30px;
+    height: 60px;
+  }
+
+/*
   .pop{
+    font-family: var(--font0);
+    width: 160px;
     display: flex;
     height: 60px;
     align-items: center;
     position: relative;
-    top: -53px;
-    right: -110px;
+    top: -83px;
+    right: -130px;
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 3px 15px;
   }
 
   .triangulo {  /*  COM AJUDA  */
@@ -91,7 +88,7 @@ body{
     border-bottom-color: white;
     transform: rotate(-90deg);
     position: relative;
-    top: 3px;
-    right: -62px;
+    top: -40px;
+    right: -82px;
   }
-  
+/*
