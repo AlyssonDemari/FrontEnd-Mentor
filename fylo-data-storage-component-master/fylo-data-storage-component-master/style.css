@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --Gradient: #ffa399 to #ff4d97;
     --Pale-Blue: hsl(243, 100%, 93%);
     --Grayish-Blue: hsl(229, 7%, 55%);
     --Dark-Blue: hsl(228, 56%, 26%);
@@ -64,6 +64,17 @@ body{
     background-color: var(--Dark-Blue);
     padding: 30px;
     height: 60px;
+    width: 420px;
+  }
+
+  .barrinha{
+    width: 99.8%;
+    height: 20px;
+    padding: 3px;
+    margin-bottom: 7px;
+    border-radius: 20px;
+    background-color: ;
+    background-image: linear-gradient(to right, #ffa399, #ff4d97 );
   }
 
 /*
