@@ -16,6 +16,7 @@
 }
 
 body{
+  font-family: var(--font0);
     background: black url(images/bg-desktop.png) bottom center no-repeat fixed;
     background-size: 100% 50%;
     background-color:var(--Very-Dark-Blue) ;
@@ -23,13 +24,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   main{
     display: flex;
     gap: 40px;
-    background-color: aqua;
     align-items: end;
   }
 
@@ -54,8 +53,8 @@ body{
     margin: 20px 0px;
     background-color: var(--Very-Dark-Blue);
     padding: 10px;
-    height: 17px;
-    width: 17px;
+    height: 18px;
+    width: 18px;
     border-radius: 10px;
   }
 
@@ -67,29 +66,67 @@ body{
     width: 420px;
   }
 
-  .barrinha{
-    width: 99.8%;
-    height: 20px;
-    padding: 3px;
-    margin-bottom: 7px;
-    border-radius: 20px;
-    background-color: ;
-    background-image: linear-gradient(to right, #ffa399, #ff4d97 );
+  article p{
+    color:var(--Grayish-Blue);
   }
 
-/*
+  strong{
+    font-family: var(--font0);
+    color:var(--Pale-Blue);
+  }
+
+  .barra{
+    display: flex;
+    margin: 8px 0px;
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--Very-Dark-Blue);
+  }
+
+  .barra div{
+    align-self: center;
+    border: 2px solid var(--Very-Dark-Blue);
+    width: 75%;
+    height: 70%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#ffa399,#ff4d97);
+  }
+
+  .GB{
+    width: 400px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .GB p{
+    color: var(--Pale-Blue);
+    font-weight: bolder;
+  }
+
   .pop{
     font-family: var(--font0);
-    width: 160px;
+    width: 130px;
     display: flex;
     height: 60px;
     align-items: center;
     position: relative;
-    top: -83px;
-    right: -130px;
+    top: -153px;
+    right: -270px;
     background-color: white;
     border-radius: 10px;
     padding: 3px 15px;
+  }
+
+  .pop strong{
+    font-size: 35px;
+    color: black;
+    margin-right: 10px;
+  }
+
+  .pop p{
+    font-size: 13px;
   }
 
   .triangulo {  /*  COM AJUDA  */
@@ -99,7 +136,79 @@ body{
     border-bottom-color: white;
     transform: rotate(-90deg);
     position: relative;
-    top: -40px;
-    right: -82px;
+    top: -180px;
+    right: -382px;
   }
-/*
+
+
+/*  CELULAR  */
+
+  @media screen and (max-width: 700px) {
+    body{
+      height:;
+        background: pink url(images/bg-mobile.png) no-repeat center center fixed;
+        background-size: 100% 100%;
+        display: flex;
+      }
+
+      main{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+      }
+
+      section{
+        background-color: var(--Dark-Blue);
+        width: 240px;
+        height: 110px;
+      }
+
+      article{
+        border-radius: 10px;
+        background-color: var(--Dark-Blue);
+        margin: auto;
+        padding: 30px;
+        height: 90px;
+        width: 240px;
+      }
+      
+      .barra{
+        display: flex;
+        margin: 8px 0px;
+        width: 240px;
+        height: 20px;
+      }
+
+      .GB{
+        width: 240px;
+      }
+
+      .pop{
+        font-family: var(--font0);
+        width: 130px;
+        display: flex;
+        height: 60px;
+        align-items: center;
+        position: relative;
+        top: 10px;
+        right: -40px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 3px 15px;
+      }
+    
+      .pop strong{
+        font-size: 35px;
+        color: black;
+        margin-right: 10px;
+      }
+    
+      .pop p{
+        font-size: 13px;
+      }
+    
+      .triangulo {
+        display: none;
+      }
+  }
