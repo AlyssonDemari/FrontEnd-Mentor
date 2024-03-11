@@ -145,7 +145,6 @@ body{
 
   @media screen and (max-width: 700px) {
     body{
-      height:;
         background: pink url(images/bg-mobile.png) no-repeat center center fixed;
         background-size: 100% 100%;
         display: flex;
