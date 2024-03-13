@@ -4,6 +4,7 @@
 
 :root{
     --Pink: hsl(322, 100%, 66%);
+    --Pink-hover: hsl(322, 83%, 73%);
     --Very-Pale-Cyan: hsl(193, 100%, 96%);
     --Very-Dark-Cyan: hsl(192, 100%, 9%);
     --Grayish-Blue: hsl(208, 11%, 55%);
@@ -167,7 +168,7 @@ article img{
 }
 
 .comentario{
-    margin: auto;
+    margin: 0px auto;
     background-color: white;
     width: 800px;
     height: 280px;
@@ -177,9 +178,12 @@ article img{
     justify-content: top;
     border-radius: 16px;
     box-shadow: 0px 0px 90px 16px rgba(0, 0, 0, 0.068);
+    position: relative;
+    top: 90px;
 }
 
 .comentario h2{
+    font-size: 2rem;
     margin-top: 66px;
     color: var(--Very-Dark-Cyan);
 }
@@ -197,6 +201,10 @@ article img{
     text-decoration: none;
 }
 
+a:hover{
+    background-color: var(--Pink-hover);
+}
+
 /*  FOOTER  */
 
 footer{
@@ -204,10 +212,11 @@ footer{
     margin: auto;
 }
 
+
 .sub-foot{
-    background-color: aqua;
+    background-color: var(--Very-Dark-Cyan);
     margin:auto;
-    padding: 190px 140px 100px 140px ;
+    padding: 190px 120px 100px 120px ;
     width: 1440px;
     display: flex;
     justify-content: space-between;
@@ -228,6 +237,7 @@ footer img{
 
 address{
     width: 364px;
+    font-family: var(--font1);
 }
 
 ul{
@@ -240,13 +250,42 @@ li{
     color: var(--Very-Pale-Cyan);
 }
 
+li:hover{
+    text-decoration: underline ;
+}
+
+.icon-right{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+.foot-copy{
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    top: 150px;
+    color: var(--Very-Pale-Cyan);
+}
+
+.foot-icon{
+    display: flex;
+    gap: 20px;
+}
+
 .icon{
     width: 35px;
     font-size: 1rem;
     color: var(--Very-Pale-Cyan);
     padding: 8px;
-    margin: 0px 0px;
+    gap: 200px;
     border: 2px solid var(--Very-Pale-Cyan);
     border-radius: 50%;
     text-align: center;
+}
+
+.icon:hover{
+    color: var(--Pink);
+    border: 2px solid var(--Pink);
+    transition: 0.5s all ;
 }
