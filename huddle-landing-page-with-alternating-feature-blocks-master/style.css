@@ -289,3 +289,180 @@ li:hover{
     border: 2px solid var(--Pink);
     transition: 0.5s all ;
 }
+
+
+/*  Celulares menores  */
+@media (min-width: 360px) and (max-width: 767.98px){
+body{
+    width: 100%;
+}
+
+    header{
+        background: var(--Very-Pale-Cyan) url(images/bg-hero-mobile.svg)top;
+        padding: 20px 0px;
+        height: 680px;
+    }
+    
+    header > nav{
+        width: 100%;
+        padding: 0px 10px;
+    }
+    
+    nav img{
+        width: 120px;
+    }
+    
+    nav a{
+        width: 100px;
+        height: 25px;
+        font-size: 10px;
+        display: flex;
+    }
+
+    /*  SECTION  */
+
+    section{
+        flex-direction: column;
+        width: 250px;
+        margin: 70px auto;
+    }
+
+    .head-text{
+        width: 290px;
+    }
+
+    .head-text h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .head-text p{
+        font-size: 15.5px;
+        text-align: center;
+    }
+    
+    .head-text a{
+        font-size: 15px;
+        width: 260px;
+        height: 42px;
+        margin: auto;
+    }
+
+    div .img{
+        width: 300px;
+        margin: 50px auto;
+    }
+
+    /*  ARTICLE  */
+
+    article{
+        display: flex;
+        flex-direction: column;
+        margin: 90px auto;
+        width: 350px;
+        gap: 50px;
+    }
+
+    article img{
+        float: none;
+        display: flex;
+        width: 250px;
+        margin: auto;
+    }
+
+    .grow,
+    .your,
+    .flowing{ 
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse; 
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .grow-text,
+    .flowing-text,
+    .your-text{
+        align-self: center;
+        margin: 20px;
+        width: 350px;
+    }
+    
+    .grow-text h2,
+    .flowing-text h2,
+    .your-text h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .grow-text p,
+    .flowing-text p,
+    .your-text p{
+        width: 310px;
+        margin: 10px auto;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .comentario{
+        width: 350px;
+        height: 200px;
+        position: relative;
+        top: 90px;
+    }
+    
+    .comentario h2{
+        font-size: 1.2rem;
+        margin-top: 50px;
+    }
+    
+    .comentario a{
+        margin: auto;
+        width: 220px;
+        height: 43px;
+        font-size: 0.8rem;
+        box-shadow: 0px 26px 27px -3px rgba(0,0,0,0.1);
+    }
+
+    /*  FOOTER  */
+
+    .sub-foot{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    address{
+        font-size: 1.1rem;
+        width: 310px;
+        font-family: var(--font1);
+    }
+
+    ul{
+        width: 300px;
+        margin-right: 50px;
+        column-count: 1;
+    }
+    li{
+        padding: 10px 0px;
+        color: var(--Very-Pale-Cyan);
+    }
+
+    .icon-right{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        background-color: aqua;
+    }
+    
+    .foot-copy{
+        display: flex;
+        width: 250px;
+        font-size: 12px;
+        position: relative;
+        top: 80px;
+        color: var(--Very-Pale-Cyan);
+        background-color: blue;
+    }
+}
