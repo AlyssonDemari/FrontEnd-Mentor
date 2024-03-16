@@ -295,9 +295,6 @@ li:hover{
 
 /*  Celulares menores  */
 @media (min-width: 360px) and (max-width: 767.98px){
-body{
-    width: 100%;
-}
 
     header{
         background: var(--Very-Pale-Cyan) url(images/bg-hero-mobile.svg)top;
@@ -360,7 +357,9 @@ body{
     article{
         display: flex;
         flex-direction: column;
-        margin: 90px auto;
+        margin: 0px auto;
+        padding: 10px;
+        margin-top: 90px;
         width: 350px;
         gap: 50px;
     }
@@ -428,6 +427,17 @@ body{
 
     /*  FOOTER  */
 
+    footer{
+        background-color: var(--Very-Dark-Cyan);
+        margin: auto;
+        padding: 0px;
+    }
+
+    footer img{
+        margin-right: 20px;
+        width: 50%;
+    }
+
     .sub-foot{
         width: 350px;
         display: flex;
@@ -436,7 +446,7 @@ body{
 
     address{
         font-size: 1.1rem;
-        width: 310px;
+        width: 280px;
         font-family: var(--font1);
     }
 
@@ -444,21 +454,16 @@ body{
         width: 300px;
         margin-right: 50px;
         column-count: 1;
+        padding: 0px 20px;
     }
     li{
         padding: 10px 0px;
         color: var(--Very-Pale-Cyan);
     }
 
-    .teste{
-        margin: auto;
-        width: 150px;
-        background-color: aqua;
-    }
-
-
     .icon-right{
         margin: 30px 0px;
+        padding: 10px;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -478,4 +483,150 @@ body{
     .foot-copy p{
         margin: auto;
     }
+}
+
+/*  Celulares e alguns Tablets  */
+@media (min-width:768px) and (max-width: 991.98px){
+    header{
+        height: 1070px;
+    }
+
+    header > nav{
+        width: 90%;
+    }
+
+    section{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .head-text{
+        text-align: center;
+    }
+    
+    .head-text a{
+        margin: 10px auto;
+    }
+    
+    div .img{
+        width: 680px;
+        margin: auto;
+    }
+
+    /*  ARTICLE  */
+
+    article{
+        margin: 160px auto;
+        width: 100%;
+        padding: 20px;
+        gap: 50px;
+    }
+    
+    article img{
+        padding: 30px;
+        float: none;
+        width: 350px;
+    }
+    
+    .comentario{
+        width: 600px;
+    }
+    
+    .comentario h2{
+        font-size: 1.8rem;
+    }
+    
+    .comentario a{
+        height: 60px;
+    }
+
+    /*  FOOTER  */
+
+    footer{
+        background-color: var(--Very-Dark-Cyan);
+        margin: auto;
+        padding: 0px;
+    }
+
+    .sub-foot{
+        width: 590px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    address{
+        font-size: 1.1rem;
+        width: 550px;
+    }
+
+    ul{
+        width: 550px;
+        margin-right: 70px;
+        column-count: 1;
+        padding: 0px 20px;
+    }
+    li{
+        padding: 10px 0px;
+        color: var(--Very-Pale-Cyan);
+    }
+
+    .icon-right{
+        margin: 30px 0px;
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        width: 300px;
+    }
+    
+    .foot-copy{
+        width: 300px;
+        display: flex;
+        font-size: 12px;
+        position: relative;
+        top: 5dvb;
+        color: var(--Very-Pale-Cyan);
+    }
+
+    .foot-copy p{
+        margin: auto;
+    }
+
+}
+
+/*  Notebooks  */
+@media (min-width: 1024px) and (max-width: 1399.98px){
+    
+    header > nav{
+        width: 90%;
+    }
+
+    section{
+        width: 90%;
+    }
+    
+    .head-text{
+        width: 530px;
+        padding: 30px;
+    }
+    
+    div .img{
+        width: 580px;
+        margin: 0px auto;
+    }
+
+    /*  ARTICLE  */
+
+    article{
+        padding: 30px;
+        width: 100%;
+    }
+
+    /*  FOOTER  */
+
+    .sub-foot{
+        width: 100%;
+    }
+
 }
