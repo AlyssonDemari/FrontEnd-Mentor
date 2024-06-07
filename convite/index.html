@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sedan+SC&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Julius+Sans+One&family=Quintessential&family=Sedan+SC&display=swap');
+
+        body{
+            background-image: url(imagen/convite1.png);
+            background-size: 100%;
+            color: #65A4AC;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 50px;
+            font-family: "Sedan SC", serif;
+
+
+        }
+
+        main{
+            text-align: center;
+        }
+
+        h1{
+            font-family: "Quintessential", serif;
+            color: #C2DDE4;
+        }
+
+        h3{
+            margin: 200px;
+            font-size: 30px;
+        }
+
+        selector{
+            position: absolute;
+            top: 400px;
+            left: 900px;
+        }
+        button{
+            border-radius: 20px;
+            border: 2px solid gray;
+            padding: 10px 30px;
+
+        }
+
+        img{
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h3>Quero dormir agarradinho com você!</h3>
+        <h1>Você aceita dormir comigo? </h1>
+        
+        <div id="conteudo">
+            <Button onclick="sim()">SIM</Button>
+            <button onmousemove="desvia(this)">NÃO</button>
+        </div>
+    </div>
+    <h3>Confirme a presensa clicando no "SIM" ou "NÃO"</h3>
+    </main>
+    
+    
+</body>
+
+<script>
+        function sim() {
+        alert("Você aceitou namorar comigo! :)");
+        // redireciona para um URL após clicar no SIM
+        location.href = 'pag2.html';
+    }
+
+    function desvia(btn) {
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+
+    /* Este código e o botão para baixar arquivo não vão na versão que você baicar */
+    function baixarArquivo() {
+        /* link do código original no GitHub */
+        fetch("https://raw.githubusercontent.com/MTHS1901/pedido-de-namoro-irrecusavel/main/index.html", {
+            "headers": {
+                "accept": "text/html"
+            },
+            "method": "GET",
+        }).then(function (response) {
+            if (!response.ok) {
+                throw new Error('Falha no download!');
+            }
+            return response.text();
+        }).then(function (data) {
+            const blob = new Blob([data], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = prompt("Insira um nome para o arquivo para baixar") + ".html";
+            link.click();
+            URL.revokeObjectURL(url);
+        })
+    }
+
+</script>
+</html>
