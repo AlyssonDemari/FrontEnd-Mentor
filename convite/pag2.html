@@ -12,15 +12,15 @@
         @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Julius+Sans+One&family=Quintessential&family=Sedan+SC&display=swap');
 
         body{
-            background-color: red;
+            background-image: url(imagen/convite1.png);
             background-size: 100%;
             color: #65A4AC;
             background-attachment: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            font-size: 50px;
+            height: 90vh;
+            font-size: 35px;
             font-family: "Sedan SC", serif;
 
 
@@ -31,90 +31,31 @@
         }
 
         h1{
+            
             font-family: "Quintessential", serif;
             color: #C2DDE4;
         }
 
         h3{
-            margin: 200px;
             font-size: 30px;
+            padding: 0px;
         }
 
-        selector{
-            position: absolute;
-            top: 400px;
-            left: 900px;
-        }
-        button{
-            border-radius: 20px;
-            border: 2px solid gray;
-            padding: 10px 30px;
-
-        }
-
-        img{
-            max-width: 800px;
-        }
     </style>
 </head>
 <body>
     <main>
-        <h3>Quero dormir agarradinho com você!</h3>
-        <h1>Você aceita dormir comigo? </h1>
+        <h3>Compareça no endereço</h4>
         
-        <div id="conteudo">
-            <Button onclick="sim()">SIM</Button>
-            <button onmousemove="desvia(this)">NÃO</button>
-        </div>
-    </div>
-    <h3>Confirme a presensa clicando no "SIM" ou "NÃO"</h3>
+        <h1>Rua: Princesa Isabel 280<h1>
+        <h1>Bairro: Viamópolis</h1>
+        <h1>Dia:08/06/2024 </h1>
+        <h1>Horário: A Hora que você quiser minha deusa</h1>
+        <h3>Aguardo anciosamente </h3>
+        <img src="imagen/GIFs de Ursinhos fofos, carinhosos e apaixonados - GIFMAN.gif" alt="gif">
     </main>
     
     
 </body>
 
-<script>
-        function sim() {
-        alert("Você aceitou namorar comigo! :)");
-        // redireciona para um URL após clicar no SIM
-        location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
-    }
-
-    function desvia(btn) {
-        btn.style.position = 'absolute';
-        btn.style.bottom = geraPosicao(10, 90);
-        btn.style.left = geraPosicao(10, 90);
-        console.log('opa, desviei...');
-    }
-
-    function geraPosicao(min, max) {
-        return (Math.random() * (max - min) + min) + "%";
-    }
-
-
-    /* Este código e o botão para baixar arquivo não vão na versão que você baicar */
-    function baixarArquivo() {
-        /* link do código original no GitHub */
-        fetch("https://raw.githubusercontent.com/MTHS1901/pedido-de-namoro-irrecusavel/main/index.html", {
-            "headers": {
-                "accept": "text/html"
-            },
-            "method": "GET",
-        }).then(function (response) {
-            if (!response.ok) {
-                throw new Error('Falha no download!');
-            }
-            return response.text();
-        }).then(function (data) {
-            const blob = new Blob([data], { type: 'text/html' });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = prompt("Insira um nome para o arquivo para baixar") + ".html";
-            link.click();
-            URL.revokeObjectURL(url);
-        })
-    }
-
-</script>
 </html>
