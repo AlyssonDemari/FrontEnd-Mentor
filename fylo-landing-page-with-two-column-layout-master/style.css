@@ -104,10 +104,77 @@ header > article > img{
 
 /*  ARTICLE  */
 
+
+
 article{
+    width: 1444px;
     display: flex;
+    background-color: var(--Light-Grayish-Blue);
 }
 
 article img{
-    width: 100px;
+    width: 40%;
+}
+
+article .text-article h2{
+    font-size: 40px;
+}
+
+article .base-text p{
+    font-size: 16px;
+    margin: 24px 0px;
+}  
+
+article .linka{
+    color: var(--Moderate-Cyan);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+.linka a{
+    text-decoration: none;
+    color: var(--Moderate-Cyan);
+
+}
+
+.linka img{
+    width: 120%;
+    padding-top: 4px;
+    
+}
+
+.text-article{
+    width: 793.98px;
+    height: 670px;
+}
+
+.base-conteiner{
+    
+    background-color: white;
+    width: 300px;
+    margin:40px 0px;
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+.base-conteiner p{
+    color: var(--Very-Dark-Blue);
+    width: 290px;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.base-coment{
+    margin-top: 20px ;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.base-coment img{
+    width: 40px;
+    border-radius: 50%;
 }
