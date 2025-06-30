@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-family: 'Noto Sans', sans-serif;
+
+
+$neutral900: hsl(227, 75%, 14%);
+$neutral800: hsl(226, 25%, 17%);
+$neutral700: hsl(225, 23%, 24%);
+$neutral600: hsl(226, 11%, 37%);
+$neutral300: hsl(0, 0%, 78%);
+$neutral200: hsl(217, 61%, 90%);
+$neutral100: hsl(0, 0%, 93%);
+$neutral0: hsl(200, 60%, 99%);
+
+$red400: hsl(3, 86%, 64%);
+$red500: hsl(3, 71%, 56%);
+$red700: hsl(3, 77%, 44%);
+
+$linear-gradient-light: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+$linear-gradient-dark: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    font-size: 1rem;
+}
+
+body{
+    background: $linear-gradient-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    border: 2px solid blue;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    border: 2px solid pink;
+    width: 80%;
+    height: 100%;
+
+}
+
+img{
+    width: 4rem;
+}
+
+.card{
+    border: 2px solid red;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: $neutral800;
+    height: 11rem;
+    width: 25rem;
+    color: $neutral0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .card-header{
+        border: 2px solid green;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        width: 100%;
+        font-size: 1rem;
+
+        p{
+            color: $neutral300;
+            font-size: .8rem;
+            margin-top: .3rem;
+        }
+        
+    }
+
+    .card-footer{
+        border: 2px solid green;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        button{
+            border: .1rem solid $neutral300;
+            background: transparent;
+            padding: .3rem .9rem;
+            border-radius: 1rem;
+            font-size: .8rem;
+            color: $neutral0;
+        }
+    }
+}
