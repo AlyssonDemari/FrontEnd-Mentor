@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* Remove margens e paddings padrão para um controle melhor */
 * {
   margin: 0;
   padding: 0;
@@ -8,70 +10,77 @@
 }
 
 body {
-  background: linear-gradient(180deg, #040918 0%, #091540 100%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+  background: linear-gradient(180deg, #040918 0%, #091540 100%);
 }
 
-header {
-  border: 2px solid blue;
+.header-theme {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+}
+.header-theme__bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(226, 25%, 17%);
+  width: 100%;
+  height: 4rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+main nav {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main nav h1 {
+  color: hsl(200, 60%, 99%);
+  font-size: 2rem;
+}
+main nav button {
+  border: none;
+  padding: 0.4rem 1.1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background: hsl(226, 25%, 17%);
+  color: hsl(0, 0%, 78%);
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main nav button.active {
+  background: hsl(3, 86%, 64%);
+  color: hsl(225, 23%, 24%);
+}
+main nav button:hover, main nav button:focus {
+  background: hsl(3, 86%, 64%);
+  color: hsl(225, 23%, 24%);
+  transition: all 0.3s;
 }
 
 .container-cards {
+  border: 2px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   flex-wrap: wrap;
-  gap: 2rem;
-  border: 2px solid pink;
-  width: 80%;
-  height: 100%;
 }
-
-img {
-  width: 4rem;
-}
-
-.card {
+.container-cards .card {
   border: 2px solid red;
-  padding: 1rem;
+  width: 30rem;
+  height: 15rem;
   border-radius: 1rem;
-  background: hsl(226, 25%, 17%);
-  height: 11rem;
-  width: 25rem;
-  color: hsl(200, 60%, 99%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.card .card-header {
-  border: 2px solid green;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  font-size: 1rem;
-}
-.card .card-header p {
-  color: hsl(0, 0%, 78%);
-  font-size: 0.8rem;
-  margin-top: 0.3rem;
-}
-.card .card-footer {
-  border: 2px solid green;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.card .card-footer button {
-  border: 0.1rem solid hsl(0, 0%, 78%);
-  background: transparent;
-  padding: 0.3rem 0.9rem;
-  border-radius: 1rem;
-  font-size: 0.8rem;
-  color: hsl(200, 60%, 99%);
 }/*# sourceMappingURL=index.css.map */
