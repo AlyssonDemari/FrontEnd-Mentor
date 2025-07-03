@@ -1,25 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "variables";
+@import "mixing";
 
-$font-family: 'Noto Sans', sans-serif;
 
-
-$neutral900: hsl(227, 75%, 14%);
-$neutral800: hsl(226, 25%, 17%);
-$neutral700: hsl(225, 23%, 24%);
-$neutral600: hsl(226, 11%, 37%);
-$neutral300: hsl(0, 0%, 78%);
-$neutral200: hsl(217, 61%, 90%);
-$neutral100: hsl(0, 0%, 93%);
-$neutral0: hsl(200, 60%, 99%);
-
-$red400: hsl(3, 86%, 64%);
-$red500: hsl(3, 71%, 56%);
-$red700: hsl(3, 77%, 44%);
-
-$linear-gradient-light: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
-$linear-gradient-dark: linear-gradient(180deg, #040918 0%, #091540 100%);
-
-/* Remove margens e paddings padrão para um controle melhor */
 * {
     margin: 0;
     padding: 0;
@@ -38,15 +20,12 @@ body {
 }
 
 .header-theme{
+    @include centralize();
     height: 7rem;
-    display: flex;
-    align-items: center;
     
     &__bg{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
+        @include centralize(row, space-between,center);
+        
         background: $neutral800;
         width: 100%;
         height: 4rem;
@@ -58,13 +37,10 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    flex-grow: 1; 
 
     nav {
         height: 6rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include centralize(row, space-between, center);
 
         h1{
             color: $neutral0;
@@ -108,8 +84,59 @@ main {
 
     .card{
         border: 2px solid red;
-        width: 30rem;
+        width: 30.5rem;
         height: 15rem;
         border-radius: 1rem;
+        background: $neutral800;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 1rem;
+            color: $neutral0;
+
+            h2{
+                font-size: 1.6rem;
+            }
+            p{
+                font-size: 1.2rem;
+                color: $neutral300;
+            }
+        }
+
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button{
+                border: none;
+                padding: .4rem 1.1rem;
+                border-radius: 2rem;
+                font-size: 1rem;
+                background: $neutral800;
+                color: $neutral300;
+                border: .1rem solid $neutral300;
+                transition: all .3s;
+
+                &:hover, &:focus{
+                    background: $red400;
+                    color: $neutral700;
+                    border: .1rem  solid $red400;
+                    transition: all .3s;
+                    cursor: pointer;
+                }
+            }
+
+            i{
+                font-size: 2.5rem;
+            }
+        }
     }
 }
